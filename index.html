@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-   
-    <link rel="stylesheet" href="main.css" />
-    <title>sculpture incubator</title>
-  </head>
+<head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <body>
-    <main>
-      <div class="column left">
-        <img
-          id="image"
-          src="assets/img/womb.png"
-        />
-        <img id="image-2" src="assets/img/spiraltime.png">
-        
-      </div>
 
-      <div class="column right">
-        <div id="first">
-          
+  <link rel="stylesheet" href="main.css" />
+  <title>sculpture incubator</title>
+</head>
+
+<body>
+  <main>
+    <div class="column left">
+      <img id="image" src="assets/img/womb.png" />
+      <img id="image-2" src="assets/img/spiraltime.png">
+
+    </div>
+
+    <div class="column right">
+      <div id="first">
+
         <div id="p1">
           poems are rough notations for the music we are <br />
           a womb <br />
@@ -34,7 +32,7 @@
         </div>
 
         <div>
-          <p id="p2">
+          <p id="p2" class="new">
             <br />a letter <br />
             announces <span class="spacing"></span>
             <span class="spacing"></span> frantic sky <br />
@@ -46,7 +44,7 @@
             announces <span class="spacing"></span> private <br />
             death<br />
           </p>
-          <p id="p4">
+          <p id="p4" class="new-too">
             grief their<br />
             love’s work looks absurd<br />
             a letter<br />
@@ -56,12 +54,10 @@
           </p>
 
           <p id="p5">
-            <img
-              src="https://cdn.glitch.global/e87bac3b-eec1-459e-8ba6-151ce2f7c9c9/womb.png?v=1747155267232"
-            />
+            <img src="assets/img/flower.png" />
           </p>
 
-          <p id="p6">
+          <p id="p6" class="new-too">
             limits in<br />
             this love we feel pours through us like giveaway song<br />
             a shooting star<br />
@@ -70,9 +66,7 @@
           </p>
 
           <p id="p7">
-            <img
-              src="https://cdn.glitch.global/e87bac3b-eec1-459e-8ba6-151ce2f7c9c9/d.png?v=1747155264135"
-            />
+            <img src="assets/img/coloredbits.png" />
           </p>
 
           <p id="p8">
@@ -86,240 +80,215 @@
             bits<br />
           </p>
         </div>
-        </div>
-        
-        <div id="second">
-          <p id="q1">
-            
-            sky that<br>
-     lovers love death<br>
-dancing spiral<br>
-dreams   <span class="spacing"></span>    earth-colored<br>
-      object
-to teeth  <span class="spacing"></span>     grief, an exuberance<br>
-          </p>
-          
-          <p id="q2">
-            breath without<br>
-     clear bead at the center<br>
-the lines of your palm<br>
-closes   <span class="spacing"></span>    earth-colored<br>
-      meanings<br>
-it softens  <span class="spacing"></span>     a universe from a drop of blood<br>
-          </p>
-          
-          <p id="q3">
-            field because<br />
-lovers love death<br />
-a letter<br />
-dreams <span class="spacing"></span> private<br />
-<span class="spacing"></span> water<br />
-it softens <span class="spacing"></span> basil and carnations cannot control their laughter
-
-          </p>
-          
-          <p id="q4">
-            apple yet<br />
-<span class="spacing"></span>each ant is given its elegant belt<br />
-dancing spiral<br />
-dreams <span class="spacing"></span> sweet<br />
-<span class="spacing"></span> region<br />
-to teeth <span class="spacing"></span> each would pitch a tent in the ocean
-
-          </p>
-          
-          <p id="q5">
-            Aphrodite under<br />
-<span class="spacing"></span>you are not your eyes<br />
-a womb<br />
-dreams <span class="spacing"></span> private<br />
-<span class="spacing"></span> path<br />
-it erodes <span class="spacing"></span> fana moves in the night sky
-
-          </p>
-          <p id="q6">
-            
-            pole but<br />
-<span class="spacing"></span>each ant is given its elegant belt<br />
-a shooting star<br />
-announces <span class="spacing"></span> outside<br />
-<span class="spacing"></span> joy<br />
-it opens <span class="spacing"></span> seeds feed on ground then lift up
-
-          </p>
-          
-          <p id="q7">
-            field in<br />
-<span class="spacing"></span>fires set on the mountain<br />
-the lines of your palm<br />
-births <span class="spacing"></span> private<br />
-<span class="spacing"></span> king<br />
-          </p>
-            
-<p id="q8">it gnaws <span class="spacing"></span> friendship fire dissolves divisions
-
-          </p>
-        </div>
       </div>
-    </main>
-    <script>
-$(document).ready(function() {
-  $("#image").click(function() {
-    $("#p1").show();
-  });
 
-  $("#p1").click(function() {
-    $("#p2").show();
-    $("#p1").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
+      <div id="second">
+        <p id="q1">
 
-  $("#p2").click(function() {
-    $("#p3").show();
-    $("#p2").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
+          sky that<br>
+          lovers love death<br>
+          dancing spiral<br>
+          dreams <span class="spacing"></span> earth-colored<br>
+          object
+          to teeth <span class="spacing"></span> grief, an exuberance<br>
+        </p>
 
-  $("#p3").click(function() {
-    $("#p4").show();
-    $("#p3").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
+        <p id="q2">
+          breath without<br>
+          clear bead at the center<br>
+          the lines of your palm<br>
+          closes <span class="spacing"></span> earth-colored<br>
+          meanings<br>
+          it softens <span class="spacing"></span> a universe from a drop of blood<br>
+        </p>
 
-  $("#p4").click(function() {
-    $("#p5").show();
-    $("#p4").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
+        <p id="q3">
+          field because<br />
+          lovers love death<br />
+          a letter<br />
+          dreams <span class="spacing"></span> private<br />
+          <span class="spacing"></span> water<br />
+          it softens <span class="spacing"></span> basil and carnations cannot control their laughter
 
-  $("#p5").click(function() {
-    $("#p6").show();
-    $("#p5").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
+        </p>
 
-  $("#p6").click(function() {
-    $("#p7").show();
-    $("#p6").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
+        <p id="q4" class="new">
+          apple yet<br />
+          <span class="spacing"></span>each ant is given its elegant belt<br />
+          dancing spiral<br />
+          dreams <span class="spacing"></span> sweet<br />
+          <span class="spacing"></span> region<br />
+          to teeth <span class="spacing"></span> each would pitch a tent in the ocean
 
-  $("#p7").click(function() {
-    $("#p8").show();
-    $("#p7").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
+        </p>
 
-  $("#p8").click(function() {
-    // Reset all fonts to 'Gensco' at size 20px
-    for(let i = 1; i <= 8; i++) {
-      $("#p" + i).css({
-        "font-family": 'Gensco',
-        "font-size": '20px'
+        <p id="q5">
+          Aphrodite under<br />
+          <span class="spacing"></span>you are not your eyes<br />
+          a womb<br />
+          dreams <span class="spacing"></span> private<br />
+          <span class="spacing"></span> path<br />
+          it erodes <span class="spacing"></span> fana moves in the night sky
+
+        </p>
+        <p id="q6">
+<img
+              src="assets/img/deity.png"
+            />
+        </p>
+        <p id="q7" class="new-too">
+
+          pole but<br />
+          <span class="spacing"></span>each ant is given its elegant belt<br />
+          a shooting star<br />
+          announces <span class="spacing"></span> outside<br />
+          <span class="spacing"></span> joy<br />
+          it opens <span class="spacing"></span> seeds feed on ground then lift up
+
+        </p>
+
+        <p id="q8">
+          field in<br />
+          <span class="spacing"></span>fires set on the mountain<br />
+          the lines of your palm<br />
+          births <span class="spacing"></span> private<br />
+          <span class="spacing"></span> king<br />
+        </p>
+
+        <p id="q9">it gnaws <span class="spacing"></span> friendship fire dissolves divisions
+
+        </p>
+         <p id="q10">
+            <img
+              src="assets/img/friendship.png"
+            />
+          </p>
+
+      </div>
+    </div>
+  </main>
+  <script>
+    $(document).ready(function () {
+      $("#image").click(function () {
+        $("#p1").show();
       });
-    }
-  });
 
-///////////////////
+       $("#p1").click(function () {
+        $("#p2").show();
+        $("#p1").addClass("distort");
+      });
+
+      $("#p2").click(function () {
+        $("#p3").show();
+        $("#p2").addClass("distort");
+      });
+
+      $("#p3").click(function () {
+        $("#p4").show();
+        $("#p3").addClass("distort");
+      });
   
-  $("#image").click(function() {
-    $("#second").hide();
-    $("#first").show();
+
+      $("#p4").click(function () {
+        $("#p5").show();
+        $("#p4").addClass("distort");
+      });
+
+      $("#p5").click(function () {
+        $("#p6").show();
+        $("#p5").addClass("distort");
+      });
+
+      $("#p6").click(function () {
+        $("#p7").show();
+        $("#p6").addClass("distort");
+      });
+
+      $("#p7").click(function () {
+        $("#p8").show();
+        $("#p7").addClass("distort");
+      });
+
+      $("#p8").click(function () {
+        // Reset all fonts to 'Gensco' at size 20px
+        for (let i = 1; i <= 8; i++) {
+          $("#p" + i).addClass("distort-remove");
+     
+        }
+      });
+
+      ///////////////////
+
+      $("#image").click(function () {
+        $("#second").hide();
+        $("#first").show();
         $("#p1").show();
 
-  });
-  
-  $("#image-2").click(function() {
-    $("#first").hide();
-    $("#second").show();
+      });
+
+      $("#image-2").click(function () {
+        $("#first").hide();
+        $("#second").show();
         $("#q1").show();
 
-  });
-  
-
-  $("#q1").click(function() {
-    $("#q2").show();
-    $("#q1").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
-  
-  
-  $("#q2").click(function() {
-    $("#q3").show();
-    $("#q2").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
-  
-  $("#q3").click(function() {
-    $("#q4").show();
-    $("#q3").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
-  
-  $("#q4").click(function() {
-    $("#q5").show();
-    $("#q4").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
-  
-  $("#q5").click(function() {
-    $("#q6").show();
-    $("#q5").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
-  
-  $("#q6").click(function() {
-    $("#q7").show();
-    $("#q6").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
-  $("#q7").click(function() {
-    $("#q8").show();
-    $("#q7").css({
-      "font-family": 'Gensco-Distorted',
-      "font-size": '20px'
-    });
-  });
-  
-$("#q8").click(function() {
- 
-
-   for(let i = 1; i <= 8; i++) {
-      $("#q" + i).show().css({
-        "font-family": 'Gensco',
-        "font-size": '20px'
       });
-    }
-  });
-    });
-  
 
-    </script>
-  </body>
+
+      $("#q1").click(function () {
+        $("#q2").show();
+        $("#q1").addClass("distort");
+      });
+
+
+      $("#q2").click(function () {
+        $("#q3").show();
+        $("#q2").addClass("distort");
+      });
+
+      $("#q3").click(function () {
+        $("#q4").show();
+        $("#q3").addClass("distort");
+      });
+
+      $("#q4").click(function () {
+        $("#q5").show();
+        $("#q4").addClass("distort");
+      });
+
+      $("#q5").click(function () {
+        $("#q6").show();
+        $("#q5").addClass("distort");
+      });
+
+      $("#q6").click(function () {
+        $("#q7").show();
+        $("#q6").addClass("distort");
+      });
+      $("#q7").click(function () {
+        $("#q8").show();
+        $("#q7").addClass("distort");
+      });
+
+  $("#q8").click(function () {
+        $("#q9").show();
+        $("#q8").addClass("distort");
+      });
+  $("#q9").click(function () {
+        $("#q10").show();
+        $("#q9").addClass("distort");
+      });
+      $("#q10").click(function () {
+
+
+        for (let i = 1; i <= 10; i++) {
+          $("#q" + i).show().addClass("distort-remove");
+      
+        }
+      });
+    });
+
+
+  </script>
+</body>
+
 </html>

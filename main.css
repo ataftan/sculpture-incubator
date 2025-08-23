@@ -1,49 +1,56 @@
-
 @font-face {
   font-family: 'Gensco';
   src: url('assets/type/GENSCO.otf') format('opentype');
 }
+
 @font-face {
   font-family: 'Gensco-Distorted';
   src: url('assets/type/conf_0-15.otf') format('opentype');
 }
-body,html{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-  overflow:hidden;
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
 }
 
 body {
   padding: 0em;
   text-align: center;
-  font-size: 2em;
-  color: black;      flex-direction: column;
-      align-items: center;
+  font-size: 1.8em;
+  color: black;
+  flex-direction: column;
+  align-items: center;
 
   background-color: white;
 }
 
-main{
-  display:grid;
- grid-template-columns: 1fr 1fr;
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
 
+::-webkit-scrollbar {
+  background: none;
+}
 
 .column {
   overflow-y: scroll;
-  
+
   padding: 1rem;
-  border: 1px solid black;
+  border: 1px solid transparent;
   box-sizing: border-box;
 }
-  
+
 
 .content {
-  height: 100%; 
+  height: 100%;
 }
+
 .image-buttons {
   display: flex;
   align-items: stretch;
@@ -52,89 +59,128 @@ main{
   right: 1em;
 }
 
-.right{
- padding-right:30px;
+.right {
+  padding-right: 30px;
 }
 
 img {
   width: 70%;
 }
 
-#image-2{
-  width:60%;
-    vertical-align: bottom;
+#image-2 {
+  width: 60%;
+  vertical-align: bottom;
 
 
 }
 
-
-/*   .hidden {
-      display: none;
-    }
-    .reveal {
-      margin-top: 20px;
-      font-size: 1.2em;
-      color: black;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-      width: fit-content;
-      align-items: center;
-    }
-    .reveal:hover{
-        color:black;
-    } */
-
-.spacing{
-    margin-left:50px;
+.distort {
+  font-family: 'Gensco-Distorted'!important;
+  font-size: 20px;
 }
 
-#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8{
-color:black;
-  font-family:Gensco;
-  display:none;
+.distort-remove {
+  font-family: 'Gensco'!important;
+  font-size: 20px;
 }
 
 
-#p2{
+.spacing {
+  margin-left: 50px;
+}
+
+#p1,
+#p2,
+#p3,
+#p4,
+#p5,
+#p6,
+#p7,
+#p8,
+#q1,
+#q2,
+#q3,
+#q4,
+#q5,
+#q6,
+#q7,
+#q8,
+#q9,
+#q10 {
+  color: black;
+  font-family: Gensco;
+  display: none;
+}
+
+
+.new{
+   margin-top: 20px;
+  font-size: 1em;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  float: left;
+
+}
+
+.new-too{
     margin-top: 20px;
-      font-size: 1em;
-      color: black;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-      width: fit-content;
-      float:left;
-
-
-}
-
-#p2.toggled{
-  color:black;
-}
-#p3{
-    
-    margin-top: 20px;
-      font-size: 1em;
-      color: black;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-      width: fit-content;
-      float:right;
+  font-size: 1em;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  float: right;
 
 }
+#p2.toggled {
+  color: black;
+}
+
+
+
 
 @media (max-width: 768px) {
+
+  body {
+
+    font-size: 1em;
+
+  }
+
+  ::-webkit-scrollbar {
+    background: none;
+  }
+
+  #image {
+    width: 100%;
+    vertical-align: middle;
+
+  }
+
+  img {
+    width: 30%;
+  }
+
+  #image-2 {
+    width: 100%;
+    vertical-align: middle;
+  }
 
   img {
     width: 100%;
   }
 
-  #image-2 {
-    width: 100%;
-    vertical-align: middle; 
-  }
-  
-  
+  .distort {
+  font-family: 'Gensco-Distorted'!important;
+  font-size: 10px;
+}
+
+.distort-remove {
+  font-family: 'Gensco'!important;
+  font-size: 10px;
+}
 }
