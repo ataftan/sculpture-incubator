@@ -46,6 +46,20 @@ main {
   box-sizing: border-box;
 }
 
+.left{
+  background-image: url("assets/img/bg1-1.png");
+  background-size: cover;
+  background-position: center;
+  
+  background-repeat: no-repeat;
+}
+.right{
+  background-image: url("assets/img/bg2-2.png");
+  background-size: cover;
+  background-position: center;
+  
+  background-repeat: no-repeat;
+}
 
 .content {
   height: 100%;
